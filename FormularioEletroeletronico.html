@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Blog Reciclagem</title>
+</head>
+
+<body>
+    <header id="Inicio">
+        <center>
+            <h1>Blog de Reciclagem Eletro-Eletrônico </h1>
+        </center>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/index.html">Inicio</a></li>
+            <li><a href="http://127.0.0.1:5500/SobreReciclagem.html">Sobre Reciclagem</a></li>
+            <li><a href="http://127.0.0.1:5500/FormularioEletroeletronico.html">Formulario</a></li>
+            <li><a href="http://127.0.0.1:5500/ImpactoAmbiental.html">Impacto Ambiental</a></li>
+            <li><a href="http://127.0.0.1:5500/Perguntas.html">Perguntas frequentes</a></li>
+        </ul>
+    </nav>
+
+
+
+    <main>
+
+        <section>
+            <!--Padrao do elemente form, quando nao existe a definição de action é que, quando enviado o formulario "ira" para a mesma pagina 
+                 ex: <form action="post">, 
+                 <form method="post"> -->
+            <!-- POST enviada dados para o servidor  no corpo da solicitação -->
+            <!--GET parametros sao passados pela URL, sao visiveis na barra de endereço-->
+            <form method="post">
+                <center> <a href="#" class="logo">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAABR1BMVEUkSiVnsGEukT+PwIgjfTU0o0e00qz///8kRiQkSCUkRSSTxYwvlECNv4YjfDU1qEqIvYEAOwCw0KcANwAjjTYgnjkjQiOLvZIQPxJgrVkANQBqtWQfRiAeQSDn8eWBwozt8O12t3EHdiTP1c/R48vg7NwZei6l0qspoD+jr6QuUi9crFYaQRwbjDEzn0bI4MxjjV+/2bspbTIlUSgnXi0kczIkZi5tuHmz2bkAJgAALADs8+qky54tiDxpqnNFmVJ6qYG5wrnh5eFmembFzMWWo5aElIRMbEo/Xz5Vk1EzXzJ7tIOcxaKtyrJim2uIso+pxq1IjlQAmCRTbFReolqcupVGfURlg2F/nnpSek95pnMAhBw7lUpZomR/toeVwJpTlF6bu58Abws6hkdvgm8AHQAAEwA9bzxtjGmGpH9CdkBVqU1ymW2tOXBBAAAXRElEQVR4nO2d+UPa2NfGQTHJRUEWxYgxIhAUjKYRVGpwARXpuNXadqa2dmp13pnvTP//n99zb1ayELQ6hHaeWgiLIJ+e85xzl9hQaOiE0KB/goALoep/iHoLVXeig/4ZAq7MzshPG0UIcgjphyEvDExtYqL2czJCiIlaxSB3V2ZGRibWmX/7pxuwmCgTzVRrm+sbG/HIDlEkvrGxvlmrRjNR1B1R0Y2JkZGfyowQhrMe35lQNWJIu2Mnvl6rZqJm1FTJcwb4E/+rQgxT3VTpjHiKPBrfrELi4e/JxPFzfw4zAuOpbez0pNPFaWejxkDS1cjzJzZ+/ExjgM9If3hMTCPxGhR8op3MoD/BswoxmepD+RiU9KMfOtFQtBbx4LO6OrU6Ra6m/GDVftiyD73P5o5n/Jyd3UgnU3tn8snJbm9IExs/BiLGkQ0Msz7iCWhKqtfruycjUv10V77xCaMfwozQ5sZmlYlaWmSIIG9AEBmnnyHNVm9Ob1Yn/BIN17QfoKhF45EINH56MKFMzTvFQDfCmTQzNXUinUk+WUa0traZGXrPRtUIQIpENjZxRxOtRnrXsD2hLn2emtoV6rxflpEwGpscqQ49pOhGRNdGbd2vyu+dftzFiH7/eNoPopGxsbHJeHTYGVUjVu3s+CBa3f0dEH1enblZhbr/yQfRGma0Vhty22bWrYjikHbelCZuTj/e/P5x9WRmV5ZkWRZOfQwJI8KBlBnu8o8i3YrH457BdFOfkQWAczqz+2l19WPdt3scUxmtVYe6tDG1iEMemMCEpJGp1VW1tZ6akX0IETNStT7UycbEnYzcc27q824dxh/QGU3hrxMN0RS+NTK1BwerI1OfrCOTNR3RZGSYGbmFkYnJGkxTMzf11VNZnlndPVn9fPOxTu48+X13d2RGvjn99Pnk7Aa6SkvLZCAam5wY3pU1VHWPIkswGYhONUQfJeGjIn88UxGdSpIM/n16Kp3UpRNphjcL3cSYqbXqkJo2U+0FiECyINqrr/5+CoOQvZupm73VM82gTsHFgdMJ/JE/1iVpz8WMsIZz6I98CUXiRqqtSqcS8aI9HsoaryLCVrSqeji+GoEDi32tWRFN1oawsPXwIROR6UXSnow//9Te6S4+rPsVNBuiscnNoTNt1Ach04om9uQp+dMe6Obss7Qrf5L9uutuMyKMhiyOov0QsuSZItnEr/bCQzRmZzRUcdSHD3Xn2ecZmz77z4is2RkNk2f3R8jMM2LMNvkSsmfakDHqC1C899j/4YjGxoZm6xHSOsaejWNXED1OTkRrQ9JnG3Np8S+RUgm+vpTyd5elEjkmV0+EyG5GeCwyFJbNbGoEShdnwt1t6WL/9O71/u3F+fntl/3989uL/ZJrnpk7H+x7ILzkkmlDMaY1y33pAor32e3rvCTFz29vBen8lpfOLl5LeTsiDGRnY71Wq1bxS1Srtdr6RsR3ydYF0djk+hC0R4YFlfYvX++fxc8ubs+l/Yuz1/vSxeuLiy/7t1oUGXzw1o9MNMowSNtKhBCDotFMdd2HkQuiwFs2sk7qg/PkS/lIHl/CYf78Al/DkcWK8J6PatRjmj7jU/ImnGaE5yEzgfZsZBiRi0yf1vNsYiJeAz4eHwltegfRhCselVE80HbUb89I8mxiZCPUY5kHMZ7B44lHZRToHVrIrxWyaGKjaz3bIbKt8aF4iNYC3GT3SjO7IIJ6vhaqdm99HIn0QyfoqWamGZgzUQ9EfoUnGjHx7EDJYzLVicl+GQW2qhnVLH8ODRFuijzzLh7xSQYGb2tU+6VaKMPgZ6PMhpPR8vI0lu3ekaCGkd40ls6Fuwh/d3d3LuQjJXdG635BRPql9Rr0RybMaHXNBmlZ2lJ4nheml1XpYbQZzDAyVs3yAjQ/F6+hJbq4zZ+7M/KpOswmzi0Goe4zHVB0p5vR8sJSl1a0+9cC2WObU7GXynn+qyTA0Vchd+ZuSH7/yh7Vzp5sy8qCVdKCFkeTgdx3rBV83D7npbP9118wnK+Sux09/hNkNq2MloUt3iJ6C3xJpRTAwq8F0eX5/i2MXM+F0lfpDlzJI4ge7xUoWrMi4qctelNXBEGYWVbDKHB2pAZR6YK+xRMe+Xzpgr+EdIMhmhui76nK0dqkFZEF2LS8sLWwRauG5NyOOmDpy2b5S+FrKY8r2QUu+6/3lUtrHdPz7LvSwMLIjmiLrsuyMB1IN4pqnpM/gxKWv90v4fbx6530+lIyU20zs/G9eaa+meFHjiji30y/kUmqrQWtNzLKmZCP5295JY+Ne1+4A+u+M2Ioqvff1e98N6OuuSGanlaC2BsxWniU9i/Ae4SvXyCU9ktx4SsknDYRG8EGGiWpFv/uHMho/ZEj0XAjySsSvnckUJlmjs7uJIibL3lMiP769fbi61dBm2SMq/+oJJy+vyJnJtyjCBf96WnVjQK1pSZqDPHBiy7ps7NLGKbdCpLES8qF5kXqD4zwM59gQoepTqp90Rvog8LaSO0NIBoLTy+/URFFghRGlh17JUH4cnm7fylog31BI6RHDvb1p6jHzDpmNK0oUliRlDFewaK3FhSJH1MUEluBGoVYJhtLF5BqF/vCZckocCTP9PPLoTt4mvOAMiMk0ba2lLGtLWGLSFpSlsMz0paafkEybGTdYQ2DWEAUJ9FTMkq+2SsyG08zcYpwqi0v1eu5N0srSl2TMj2zxdcb6iAkQKdiRy2EyFTI7T54Uf7u7pK/06uZ+ezq95Z8TZn4JJkvmuFnlC11NmR6ui7NKCvT+qRIYBDZJvVLX86kS2gfwbXPLrWC3/38J3pfRp2pnd5aWlk2itpWY824EZxMi9qmrKGvBjJ58CR9gPY8O8ii63oDaSn8y9YbgTm1L+o+4WEMPOIR/9d4jFDUb8I/OIMQV0IW+c3CPlYMGYcsg/Usk1AyIsiYoA3IPL//zs8n8menGIxjQVpaWVgbWxobW1gKA5zw1lh9DNxpDW+CCEaD3VXy3fR80xJRKGrLM1tLC0v8grAk1+vQA8zMLEnCVl2Wl5YDU/Y9ToYx9XwLyHgYsjwjS0CkLi2FZUAkSRjRAiBaDlCD7UMo/ozBTkazuOSvLJO5RjW/1taWtTZg8tly/EGq+WxqXH++KVIUdVl9tCoYnRHyW8h/hn9IxEQZhkFwEfJBRE4xJl8DZBW1u7U9pp7eDlBtHbSJVfNpjXYyhga3JGLdl0YIpRpdix7Oustx3q/GpbtuItb1c6GJSV29CUEc6c+a9NtG8Hxi7IQoasbKyFHPuKuOJyPxoMDqT8MHlWbH7WkI9buRxpJyg+u0qw5CwMiywOhocJOFMmu52fUwl2uL6h1suQnPqrRUnMj2a1NR6IGMBrrnqOokRFGfzQGao55ZELHpdJpD6gHLJUOo0mEh19JJNpQuH26nQ+glpz0KiNh0Ni1q34mqw0PIOvwo6YQo6lrPNWdrbSJKHrVyhwAllCzncuVKgRXbZZa7KuRabfYol2sVOLZVAetq5nJNDnHlFn5Ae1vmIYwmNwY5nrXWfJMQRembZpxdkYEoXcgdXJXpKy5JDlo0y5YLyWTuqHJ/yF4dFu7vOZaucGyucHVVKKTZ5v1Vm77X48i6bu1PaJDtkRWRhZDByNm76Yi4ezopctlyK3tFDtqA6KiQDtGdLEsSLcuFABFbbm1zXLoSQtnt7B/lQ6Pk9c1owIQsg9h4FyGK+lJyLWgGIrbZTOMOgGaPWvigQxAl2TJdaCfBrjGMNF3J5rTkYiEbIfmSxgtl1vtiNNgsC1nWYe2EKIrMyjp7625EEChsm96G6wMVEcp2jnIt1oEICHU4VLYgCrltfnQlNNhRiN45OgmpjFwRpUUQkMH5BSHE0s1stpNTEXFpln2ZO0gCIkuisZV0q52EtLQiUmf4fQgN/neKqIhKERdCFHUXcZmTTRYO77GQYdcc4MnlrohdZ69y95UDIHNEXx2Ydn3Y2sZR1Ka7EBlr+97aG/zvyiKISneuhIBRyfkdwKGFVeGSUNkPO9ArprOVzvZBLouLPtuGon/AIrZJF1i2AEWfxUWfRaQzuG+yXS/mx2j27fy/BMJb2Is8CVGpuMtYg00ShbTWEa4O78X0FX3EIhHGZGIynRTx8CyLzUhvLBFC+EpkbS+WcT/lSicUDgYib0LAqOJgBBxAoiX+uXaLpnNHafsz+1KvZZDZcBAQoY3SnScgzChkZyS2iSqWeBDT2WzWHh99av6tJyMgFAREzEaPGCKM7HMfyRxNRKKGI48i9QJPfcFtHF/wF24i7Xt7TZ/Mh8MejDChICAS3/cmRFHvxO7vAESHZRhuQClDycpBJR2qVCoYTKUCOXh1hYeqlUqIveJY7qADtsQlK1ehpBclBBxcCYXDwUAkHvsAcjICRAfp9HYO7Dl9CNF0yFYwrmyLLmfvcXgdiMkCXc7R22186x56SlDBkbC6MAiXOAoHBFE/hIBRl80QRCxGtH1I5wBF8+Uh3UwCp9AVTTeBWiVdACi5PyAZm/SV2KELcLvp4VXVubBbHGmEwq8GjKg/QhT1P+vHMxKtAlSyL5M0DXGS2z6iC4Cq/Mf/NYEdIGmH4JEjFo9l0+ksPMO94KFfCKJZD0JzA0bULyGK+s3CSLfr+zRkEIxMIcsgpDot+h5yjdw+BESH2VC6idOQEw/gLvjKuv4M6G+VxawrofDc5UCXrPsn1MUIEJXbkF7bHOTVUbl8VO7A6L4JYZJu0YdHcLudLeA+Er08gKw7fAnPump7IWLez6kwVtwIhcPvB4noIYQo6i+DEfai7BX2YTZHt7OVJhT+DsQLjD3KdIvLttvpJEYUSh/ebx/QrSxk4ss2nXNFhObf6jBW3AjN/TnAIdrDCFHUr3pdA0Qw3iiDF7GkgGEjxv7c4RDbIndguz6Ciq+2T9stkmfuUYTmTRwao7WwFdEvg0PkJJTCslxRKXdGbLl5xeHZojZ0Qc1WoQ3jMO7gEE8icemjVqsJg/uj5j0XEjvlwmE7yXHlQvOqWXZdUkPVOZPHmoNQeK4yMEQuhAS+KMvFokwJsiynqKIjjo5VRohlybIGK0L3zKaTeHED4BACZKiKB7b4Ah5NpnF+sklWe9wh5m8LIsyom1A4PLCCxjmzLMU3UrwgCIrCU4ICwARH233cYxzxSM2/6gKyZic0uM4RVUz9ZkYRzxeLfFGA65TMyxqijqmn/0Hmw731an7gM2qQcr9avUi3I8p0ol9FTtPTv7nWOHpqbqA1XxfXsRq2jG06JeMrXe8eOcvRh5Atz5yIfnm2936IWJVGSilSAsXLxZQgC3AoG4ye8b0ZnzwLP+N7P0DsOxVREZ/eLMBFER9SvBFHf4n+L/I4MX/2zrPBj/NViX/pdg0WLRQFSikKgsybRf/02TLNbK2DbEWmGel2jf1Ite1nLPZEfmY92OGHVaK9Q7JcPqthE7NOgGa9ED3P+z5c4v8cfaRBSA2m5wkjMvhI4HFcw4NRQKwIMu1XF0TYiqD4U8XUs4WRWvFnZ1eK8j+zVgXNikCcPYJSMBRR4EAG61bDSHwaU7C+iuFEsym6SzkDUUDOkgkZZd9IMYUvplKKTJpIcoNKPRGikGWe1SxnCXrUVKxOrwQtz2yZlqJy0EWmcjJmpehj2d+epDdCf5rzP/PmGH+Wthj2SrGo33gfmCACuRCCJjKlNGAwq1Ly3kj8ADGvLJFhuvIKT1kQ0ePByzOoaWamwfCDEJLplELxCoxKUk9W+PEU49zf6q9EsHaNs7KwYtxI0IGrZ1iW6aNUii5iH0rJPC83jA4y1bUI8kipBk1CY/69tWtsGPYDuHjtWIMZFIlGo4izTMnhX73Ak9/AYKbg8XfbEeFCVsbsfbUROdakC1CahYxxGp57LOIwMmRB9P12pCYXWAwKdQEKr+TG/1lRFaYXtTsHvQ7rkI4oR6q8gAezskKlrLOzjj0iD9ac5jH24WvC2hb9E0CzxjIGITIty8UUmaGFv6mu+Wv7HpEHCmllfu7PV91pNstL4UVd+p2BCyKuYvq1LBiIZOEJGXlOMc7KtGBIVq1o7pdAmTUWaxnLKgaiYrF7GeS7GCEPQsCokaPJb1WhFH1IG6iKr8o6hW0iEmyIgNGj/Qh5TzHOYgOEoew/VI5XW6RBrsJ6ypwSwT2jjkimbHrn3B+qye8zzb/yRgRvpACaWUnQ2qIABlGXG/EGIsVOCB7tuCQbx4mi3ypbryWzRV4hwzR8HVAnwhJ/0ynAP6WOyG0j5F9dfTZC84DnxfXodW+f6j0Lu7Iya70OXDnTxOmDDYJH8EREvTP2LULwhI4Bz/j4+KhPoqH3PQjZNeATYzxlrMuSdRBelnnKHRGVOma5EAN4PhA8eJpn/INPsfNb7bBo7n1Ag8gytaaQNVkqJTu3PhiuXfnwLTau4iEzYT6ExFBXns3CH3KxGHbOW78NwkK+u4zlIkHR5AEo1WiMWvDgIOq5AoBE7kXCCmGxmJDHw+OLjXA9vOQIoiAWfF2aY5ujWFc8EDLwp1u9vBoAfRgdX+wKomIxUYRExs1prNgdR4PeJOuj7llshyB4YqBRh8a9NpMhcPTKixgEXHekJIoNuS4vAp9G0b5EFMh6b8hsjtxyyw2OSuiFRxBxEEDXJCMT3RiwD81iL0qtzNqCKJgtkSnRbU0Nwsclt6wSnfMkuJusfICCpz5jMewuu1kHuJrpYt2WZqlGLz6gbx86IXy+rDhPvkChDql4xjM8CDkUyJGHTZyrR/sggvI2Hju5/vaC6Nv1Ne4HrBXPnmeeCmrTaJW7HfUmZCVlYzPaO8/saRbkem8Iue5Z7w+Rt/ok9PcQpBkW+5cTkZ8Z+SjWH6HLISEEjH5zIPIzIx/1ZUUB7xm75VLW+oqVRJcsVBf7QTQMxcyUs8vuI9NiKfz/LyjG/zBk+ZZ+Ymi4CHWt8veNKKHg2BEglmINOGgIiQfk2dzbQP9fqG6yM+rDjAARXAgwTmkUE9CMm4j88wwTGjZEjlzzJaQjisF4zobIP4iGL4awbJ7dUDHEiEbJeF+9MAb/CR6YxIpKsZiTY1ZEvnk2F4izYR6h7tpPzChWFKgGNUo1sMZTjRR88TFqtNHQEY2CE8USBJ2BaNFr07BJaNCf9bFiu4b9BJGwmBCKRby9X5DlIi/IeDmSEhQTkS4LoliitxkNLyF87qNlTEtSRhYoCCSqKAtFXqbIOZA8BaASvRCR71zsgWnQn/N7xFXedWcapFGC+FFCTShyDX91u44ZTWNstIuYiskzjIbTiog407R9yj7ASSVisqVpTNkReebccAzwPcX+mrKYkbcaPC+nFBkiKzGKq39stEi5MCKR6MA0bJ21TaKebD0JJYqphFIcTZBIUWKjiYaSEryp2igF5pShx0qrbI3eiBpg19AOJUYpXk4kZD6WoIo9Ay/x6u2csf4Y8Dl9X4mh//mZkYoIhrJ4L7Is88VEglJ6LQmMX1fm56t/vwoTTEMwq+8n9vhd70zTETXAasYh4mA8K7hbkQooRvYAIDTP/PL+bXhO3Uc73OIg23plmoZIjRvoBcYVD7MmgEZfmLvdGGYe/fnq7ZA7NpEofnOZt+9GFNOUkJVxT0IAiBNt/0U65NygPtdTClV8ECkxWRNf7AUo9GynbA9cYi+/jjWKgEjvxL0IgQdxT3VuWxDVM9Nio6lRPc88UI6PXx+LP4Dl9BD3QUMUu3ZbTuzdfY+Pn7yo/MgBpEozo/EPYuWFK6VefDqP37I9RBJPyAe+hnpEtn3EXBen7XTGY9cfKuIwD+YfIPEFJqLvtyK7Y76djHpywg+cXH/oiD9F/KjijgHG+DdLzebINpkX19cxc9ODuvEhdn39gmyp4X6O8DGEg8NxJ95tJXKVSuf4+APWcadSIXf9PMFjCInX3pv2YMCF1N+WhYZwTezJBGbkt8H6JxdCnd4brP8T2I7PyTD/6T/9p59T/w8lvcFPQHouXAAAAABJRU5ErkJggg=="
+                            alt="logo" width="200" height="120">
+                    </a></center>
+
+                <!--fieldset cria uma "caixinha" para delimitar campos em comum-->
+                <!--legend cria uma legenda para especificar quais sao esses "campus em comum "-->
+                <section class="grid-section">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <br/>
+                    <section>
+                        <h2>Preencha o Formulario </h2>
+                        
+                </section>
+                <div class="container">
+                    <label>Nome:</label>
+                    <input type="text" name="nome" id="nome" />
+                    <br>
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" />
+                    <br>
+                    <label> Estados: </label>
+                    <input list="estado" name="estado" id="estado" />
+                    <datalist id="estado">
+                        <option value="São Paulo"></option>
+                    </datalist>
+                    <br>
+
+                    <label> Data: </label>
+                    <input type="date" name="data" id="data" />
+                    <br>
+
+                    <label>Cidade</label>
+                    <input list="cidades" name="cidade" id="cidade" />
+                    <datalist id="cidades">
+                        <option value="Araraquara"></option>
+                        <option value="São Carlos"></option>
+                        <option value="Ibaté"></option>
+                    </datalist>
+                    <br>
+                    
+                   <label>Coloque uma Observação: </label>
+                        <textarea name="endereço" id="endereço"  cols="40" rows="3"></textarea> 
+                        <br/>
+
+                </fieldset>
+            </div>
+            </section>
+            
+
+                <center>
+                    <input type="submit" value="Enviar" />
+                </center>
+            </form>
+        </section>
+
+
+
+    </main>
+
+   <center> <footer>
+        <a href="#Inicio"> Voltar ao Inicio</a>
+        <p>&copy; 2024 Meu Blog Coleta de residuos <eletro-eletronicos></p>
+    </footer></center>
+</body>
+
+</html>

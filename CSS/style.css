@@ -13,7 +13,7 @@ header{
     text-align: center;
     color: #3ca760;
     font-family: "Baskervville SC", serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -35,8 +35,9 @@ nav ul li{
 
 nav ul li a {
     text-decoration: none;
-    color: #55517A;
+    color: #000;
     margin-right: 30px;
+    font-size: 20px;
 }
 
 nav ul li a:hover {
@@ -78,10 +79,15 @@ nav ul li a:hover {
     font-family: "Baskervville SC", serif;
     font-weight: 2px;
     font-style: normal;
-    color: white;
     margin: 10px;
     padding: 10px;
-    background-color: #3ca760;
+    color: #2d2b2b;
+}
+.tamanho{
+    font-size: 25px;
+}
+.Cor{
+    color: #2d2b2b;
 }
 
 footer{
